@@ -11,3 +11,121 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  font-size: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #fcfafa;
+  text-align: center;
+}
+
+.app-background {
+  background-color: #628c8b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  background-color: #ee764a;
+  width: 500px;
+  height: min-content;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.35);;
+}
+
+.add-item-box {
+  background: #fcfafa;
+  color: #333030;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.add-item-box svg {
+  margin: 5px;
+}
+
+.add-item-input {
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  color: #464443;
+  font-size: 25px;
+  width: 100%;
+  height: 30px;
+}
+input::placeholder {
+  color: #0c0c0c93;
+  font-size: 22px;
+}
+input:focus {
+  outline: 0;
+}
+.item-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px #fbc1bb solid;
+}
+.item-name {
+  cursor: pointer;
+}
+
+.item-name svg {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.total {
+  float: right;
+  padding: 10px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #333030;
+  background: #fcfafa;
+  border-radius: 50px;
+  font-size: 12px;
+  color: #333030;
+  min-width: 70px;
+  justify-content: space-between;
+  
+}
+
+button {
+  background: transparent;
+  border: none;
+  margin: 3px;
+  color: #ec645b;
+}
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
